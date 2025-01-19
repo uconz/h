@@ -1,0 +1,9 @@
+{
+  "name": "Debian Webtop",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [3000],
+  "remoteUser": "leo",
+  "postCreateCommand": "mkdir -p /config && sudo chown leo:leo /config"
+}
